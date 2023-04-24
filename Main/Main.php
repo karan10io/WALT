@@ -1,0 +1,345 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<style>
+body {
+  font-family: Bahnschrift;
+  margin: 0px;
+}
+#ch{
+  float: right;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #7526b2;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: left;
+  float: left;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #ffffff;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.logopic{
+  font-size: 20px;
+  float:left;
+  width: 10px;
+  margin: 20px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #7526b2;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  margin: 20px;
+}
+.btnbtn-light{
+  float:right;
+  width: 44px ;
+  height: 44px;
+  border-radius: 5px;
+  padding: 6px 10px;
+  margin: 20px;
+  cursor: pointer;
+}
+span {
+  content: "\263C";
+}
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+form {
+  margin: 20px;
+  background-color: #ffffff;
+  width: 300px;
+  height: x;
+  border-radius: 5px;
+  display:flex;
+  float:right;
+  flex-direction:row;
+  align-items:center;
+}
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+  font-family: Bahnschrift;
+}
+::placeholder {
+  color: #000000;
+  opacity: 0.7; 
+}
+svg {
+  color: #fff;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.searchbutton {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+.navigationbar{
+
+  position:fixed;
+  
+  width: 100%;
+  background-color: #7526b2;
+  overflow: auto;
+  ma
+  z-index: 0;
+}
+.upperbar{
+  margin: 1;
+  padding: 0;
+  list-style: none;
+  line-height: 60px;
+}
+.menubtn{
+  float: left;
+}
+.popular{
+    margin-top:150px ;
+  align-items: center;
+}
+.popular .popular_content{
+font-size: 30px;
+text-align: left;
+}
+.topcreators{
+  border-width: 100px;
+}
+.topcreators .topcreators_content{
+  font-size: 30px;
+  text-align: left;
+}
+.foryou{
+  border-width: 100px;
+}
+.foryou .foryou_content{
+  font-size: 30px;
+  text-align: left;
+}
+.Home{
+  align-self: center;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+<link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+<title>Home
+  </title>  
+  <link rel="icon" type="image" href="Logo3.png">
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+<a href="/dashboard/Main/Main.php">
+      <img src="Logo1.png" alt="logo">
+    </a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <ul style="list-style: none;" class="sidebar-nav">
+    <li>
+    
+        <a href="/dashboard/Main/Main.php">
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+        </svg>
+        Home</p>
+        </a>     
+    </li>                 
+   
+    <hr>
+    
+    <li>
+      <a href="#">
+      <p><svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+      </svg>
+        Favourites</p>
+      </a>                
+    </li>
+    <li>
+      <a href="#">
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+        <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+      </svg>
+        Continue Playing</p>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-bottom" viewBox="0 0 16 16">
+        <path d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5zm2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702s.18.149.5.149.5-.15.5-.15v-.7c0-.701.478-1.236 1.011-1.492A3.5 3.5 0 0 0 11.5 3V2h-7z"/>
+      </svg>
+        History</p></a>
+    </li>
+    <li>
+      <a href="index.php">
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+          <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+          <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+        </svg> Admin</p>
+      </a>
+    </li>
+    <hr>
+    <li>
+      <a href="#">
+      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-wide" viewBox="0 0 16 16">
+        <path d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z"/>
+      </svg>
+        Settings</p></a>
+    </li>
+    <li>
+      <a href="#">
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+        <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+      </svg>
+        Report</p>
+      </a>
+    </li>
+    <li>
+      <a href="/dashboard/Home.php">
+        <p style="text-align: right;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+          <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+        </svg>
+         Logout</p>
+      </a>
+    </li>
+    </ul>
+</div>
+<nav class="navigationbar ">
+  <dl class="upperbar">
+    <dd class="logopic">
+      <a href="/dashboard/Main/Main.php">
+      <img src="Logo1.png" alt="logo">
+    </a>
+    </dd>
+    <dd class="menubtn">
+      <button class="openbtn" onclick="openNav()">☰</button>  
+    </dd>
+    <dd>
+      <button type="button" class="btnbtn-light" onclick="font()"><span class="bi bi-moon" id="ch"></span></button>
+    </dd>
+  </dl>
+<form role="search" id="form">
+  <input type="search" id="query" name="q" placeholder="Search" aria-label="Search through site content">
+  <button class="searchbutton">
+    <svg style="color: #000000;" viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+  </button>
+</form>
+</nav>
+
+<div id="main" class="main">
+  <div class="popular  ">
+    <div class="popular_content">
+   <h1>Popular</h1>
+    <p style="text-align: center;">Much of the content is not added yet.</p><br>
+    </div>
+  </div>
+  <div class="topcreators">
+  <div class="topcreators_content">
+   <h1>Top Creators</h1>
+    <p style="text-align: center;">Much of the content is not added yet.</p><br>
+  </div>
+</div>
+  <div class="foryou">
+    <div class="foryou_content">
+    <h1>For You</h1>
+    <p style="text-align: center;">Much of the content is not added yet.</p><br>
+  </div>
+</div>
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<script>
+  const f = document.getElementById('form');
+  const q = document.getElementById('query');
+  const google = '#';
+  const site = '#';
+
+  function submitted(event) {
+    event.preventDefault();
+    const url = google + site + '+' + q.value;
+    const win = window.open(url, '_blank');
+    win.focus();
+  }
+
+  f.addEventListener('submit', submitted);
+  var p=0;
+  function font(){
+  if(p==0){
+    document.body.style.backgroundColor= "black";
+    document.body.style.color="white";
+    document.getElementById('ch').className = "bi bi-sun";
+  p++;}
+  else if(p==1){
+    document.body.style.backgroundColor= "white";
+    document.body.style.color="black";
+    document.getElementById('ch').className = "bi bi-moon";
+  p--;
+  }}
+</script>
+</body>
+</html> 

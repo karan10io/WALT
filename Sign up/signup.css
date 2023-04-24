@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: bahnschrift;
+    background-size: cover;
+    background-position: center;
+    background-color:  rgb(230, 223, 230);
+    background-image: url(signup-background-image.png);
+    
+
+}
+.signup_form
+{
+
+    border-radius: 50px;
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: rgb(145, 101, 185);
+    padding: 20px;
+    margin: 8% auto 0;  
+    text-align: center ;  
+}
+
+.signup_form h1
+{
+ color: white  ;  
+ margin-bottom: 30px; 
+
+}
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 15px 0;
+    width: 89%;
+    border: 1px solid#999;
+    outline: none;
+}
+.captcha{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 0;
+    width: 70%;
+    border: 1px solid#999;
+    outline: none;
+}
+.submit{
+    background-color:  lightgreen;
+    width: 89%;
+    padding: 10px;
+    border-radius:20px ;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+hr{
+    margin-top: 20px;
+    width: 80%;
+}
+a{
+    color: blue;
+}
+.signup_form .preview {
+    color: #555;
+    width: 250px;
+    padding: 30px;
+    border: 3px solid #888;
+    margin: 0;
+    text-align: center;
+    height: 20px;
+    line-height:40px ;
+    letter-spacing: 8px;
+
+}
+.signup_form .preview span {
+    display: inline-block;
+    user-select: none;}
+
